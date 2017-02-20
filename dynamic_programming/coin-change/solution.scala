@@ -14,7 +14,7 @@ object Solution {
         var ways = 0
         while (amountWithCoins <= money) {
             val remaining = money - amountWithCoins
-            ways = ways +  this.makeChange(coins, remaining, index+1, memo)
+            ways = ways + this.makeChange(coins, remaining, index+1, memo)
             amountWithCoins = amountWithCoins + coins(index)
         }
         memo.put(key, ways)
