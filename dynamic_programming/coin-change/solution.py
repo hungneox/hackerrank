@@ -13,7 +13,7 @@ def make_change(coins, money, index, memo):
     key = str(money) + '-' + str(index)
     if (key in memo):
         return memo.get(key)
-    
+
     amount_with_coins = 0
     ways = 0
     while(amount_with_coins <= money):
@@ -22,6 +22,6 @@ def make_change(coins, money, index, memo):
         amount_with_coins += coins[index]
     memo[key] = ways
     return ways
-        
+
 if __name__ == '__main__':
     print(make_change(coins, money, 0, {}))

@@ -21,7 +21,7 @@ object Solution {
         memo.put(key, ways)
         return ways
     }
-    
+
     def main(args: Array[String]) {
         val first = readLine.split(' ').map(_.toInt)
         val money = first(0)
