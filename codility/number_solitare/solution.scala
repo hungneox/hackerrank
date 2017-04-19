@@ -1,7 +1,5 @@
 import scala.collection.JavaConverters._
 
-// you can write to stdout for debugging purposes, e.g.
-// println("this is a debug message")
 import scala.collection.mutable.Map;
 import scala.collection.mutable.ArrayBuffer
 
@@ -27,7 +25,6 @@ object Solution {
   }
   
   def solution(a: Array[Int]): Int = {
-    // write your code in Scala 2.12
     return dp(a, 0)
   }
 }

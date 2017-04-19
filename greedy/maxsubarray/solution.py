@@ -1,4 +1,4 @@
-#https://www.hackerrank.com/challenges/sam-and-substrings/editorial
+#https://www.hackerrank.com/challenges/maxsubarray/editorial
 n = int(input())
 for i in range(n):
     T = int(input())
