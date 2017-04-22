@@ -9,7 +9,9 @@ object Solution {
         var digits = for (w <- words(i) if w.isDigit) yield w
         var letters = for (w <- words(i) if w.isLetter) yield w
         var length = digits.length + letters.length
-        maxLength = Math.max(length, maxLength)
+        if (length == words(i).length){
+            maxLength = Math.max(length, maxLength)
+        }   
     }
     return maxLength
   }
