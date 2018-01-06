@@ -23,7 +23,7 @@ def solve(arr):
 
     return total
 
-n_balls = list(input();
+n_balls = list(input())
 
 print(solve(n_balls))
 
