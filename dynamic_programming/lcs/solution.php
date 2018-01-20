@@ -23,10 +23,8 @@ function lcs($a, $b) {
         if ($ta === $tb) {
             return array_merge(lcs($ha, $hb), [$ta]);
         } else {
-            $temp1 = lcs($a, $hb);
-            $temp2 = lcs($b, $ha);
-            $len1 = count($temp1);
-            $len2 = count($temp2);
+            list($temp1, $temp2) = [lcs($a, $hb), lcs($b, $ha)];
+            list($len1, $len2) = [count($temp1), count($temp2)];
             return $len1 > $len2 ? $temp1 : $temp2;
         }
     } else {
