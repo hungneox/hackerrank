@@ -18,9 +18,7 @@ def lcs(xs, ys):
         return []
 
 if __name__ == '__main__':
-    # m, n = map(int, input().split(' ')) # number of testcases
-    # seq1 = input()
-    # seq2 = input()
-    seq1 = [1, 2, 3, 4, 1];
-    seq  = [3, 4, 1, 2, 1, 3];
+    m, n = map(int, input().split(' ')) # number of testcases
+    seq1 = input()
+    seq2 = input()
     print("".join(lcs(seq1, seq2)).replace("  ", " "))
