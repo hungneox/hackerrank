@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/local/bin/python3
 # Slow
 def lcs(xs, ys):
     '''Return a longest common subsequence of xs and ys.
@@ -18,7 +18,9 @@ def lcs(xs, ys):
         return []
 
 if __name__ == '__main__':
-    m, n = map(int, input().split(' ')) # number of testcases
-    seq1 = input()
-    seq2 = input()
+    # m, n = map(int, input().split(' ')) # number of testcases
+    # seq1 = input()
+    # seq2 = input()
+    seq1 = [1, 2, 3, 4, 1];
+    seq  = [3, 4, 1, 2, 1, 3];
     print("".join(lcs(seq1, seq2)).replace("  ", " "))
