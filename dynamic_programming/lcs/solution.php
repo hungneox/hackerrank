@@ -12,14 +12,12 @@ function head(array $x) {
     return array_splice($x, 0, sizeof($x)-1);
 }
 
-function tail(array $y) {
-    return $y[sizeof($y)-1];
-}
+$memo = [];
 
 function lcs($a, $b) {
     if ($a && $b) {
-        list($ha,$ta) = [head($a), tail($a)];
-        list($hb,$tb) = [head($b), tail($b)];
+        list($ha,$ta) = [head($a), end($a)];
+        list($hb,$tb) = [head($b), end($b)];
         if ($ta === $tb) {
             return array_merge(lcs($ha, $hb), [$ta]);
         } else {
