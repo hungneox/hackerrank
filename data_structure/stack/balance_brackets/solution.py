@@ -15,7 +15,7 @@ def is_balance(exp):
         return False
     
     stack = []
-    for i in xrange(len(exp)):
+    for i in range(len(exp)):
         if is_open_term(exp[i]):
             stack.append(exp[i])
         else:
@@ -28,10 +28,10 @@ def is_balance(exp):
     return True if not stack else False 
                 
 if __name__ == '__main__':
-    t = int(raw_input().strip())
-    for i in xrange(t):
-        s = raw_input().strip()
+    t = int(input().strip())
+    for i in range(t):
+        s = input().strip()
         if (is_balance(s)):
-            print 'YES'
+            print('YES')
         else:
-            print 'NO'
+            print('NO')
